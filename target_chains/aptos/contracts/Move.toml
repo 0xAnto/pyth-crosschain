@@ -3,13 +3,14 @@ name = "Pyth"
 version = "0.0.1"
 upgrade_policy = "compatible"
 
+[dependencies.AptosFramework]
+git = 'https://github.com/aptos-labs/aptos-core.git'
+rev = 'main'
+subdir = 'aptos-move/framework/aptos-framework'
+
 [dependencies]
-AptosFramework = { git = "https://github.com/aptos-labs/aptos-core.git", subdir = "aptos-move/framework/aptos-framework/", rev = "2c74a456298fcd520241a562119b6fe30abdaae2" }
-MoveStdlib = { git = "https://github.com/aptos-labs/aptos-core.git", subdir = "aptos-move/framework/move-stdlib/", rev = "2c74a456298fcd520241a562119b6fe30abdaae2" }
-AptosStdlib = { git = "https://github.com/aptos-labs/aptos-core.git", subdir = "aptos-move/framework/aptos-stdlib/", rev = "2c74a456298fcd520241a562119b6fe30abdaae2" }
-AptosToken = { git = "https://github.com/aptos-labs/aptos-core.git", subdir = "aptos-move/framework/aptos-token/", rev = "2c74a456298fcd520241a562119b6fe30abdaae2" }
-Wormhole = { git = "https://github.com/wormhole-foundation/wormhole.git", subdir = "aptos/wormhole", rev = "f29c8c935123f3b3a917ba5dc930ec68737463c7" }
-Deployer = { git = "https://github.com/wormhole-foundation/wormhole.git", subdir = "aptos/deployer", rev = "f29c8c935123f3b3a917ba5dc930ec68737463c7" }
+Wormhole = { git = "https://github.com/0xAnto/wormhole.git", subdir = "aptos/wormhole", rev = "main" }
+Deployer = { git = "https://github.com/0xAnto/wormhole.git", subdir = "aptos/deployer", rev = "main" }
 
 [addresses]
 pyth = "_"
