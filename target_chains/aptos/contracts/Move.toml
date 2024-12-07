@@ -3,11 +3,6 @@ name = "Pyth"
 version = "0.0.1"
 upgrade_policy = "compatible"
 
-[dependencies.AptosFramework]
-git = "https://github.com/aptos-labs/aptos-framework.git"
-rev = "testnet"
-subdir = "aptos-framework"
-
 [dependencies]
 Wormhole = { git = "https://github.com/0xAnto/wormhole.git", subdir = "aptos/wormhole", rev = "main" }
 Deployer = { git = "https://github.com/0xAnto/wormhole.git", subdir = "aptos/deployer", rev = "main" }
