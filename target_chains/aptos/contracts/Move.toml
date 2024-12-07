@@ -4,8 +4,8 @@ version = "0.0.1"
 upgrade_policy = "compatible"
 
 [dependencies]
-Wormhole = { git = "https://github.com/0xAnto/wormhole.git", subdir = "aptos/wormhole", rev = "main" }
-Deployer = { git = "https://github.com/0xAnto/wormhole.git", subdir = "aptos/deployer", rev = "main" }
+Wormhole = { git = "https://github.com/0xAnto/wormhole.git", subdir = "aptos/wormhole", rev = "testnet" }
+Deployer = { git = "https://github.com/0xAnto/wormhole.git", subdir = "aptos/deployer", rev = "testnet" }
 
 [addresses]
 pyth = "_"
